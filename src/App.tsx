@@ -1,18 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import { useState } from "react";
+
 import "./App.css";
-import { Button } from "./components/Button";
 import { InputSection } from "./components/InputSection";
 import { DayNightChange } from "./components/DayNightShift";
 import { Counter } from "./components/Counter";
+import { FAQList } from "./components/FAQList";
+import BananaBank from "./components/BananaBank";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
-		<>
-			<Button />
+		<div className='flex flex-col items-center'>
+			<FAQList />
+			<br />
+			<BananaBank />
 			<br />
 			<InputSection />
 			<br />
@@ -20,20 +20,7 @@ function App() {
 			<br />
 			<Counter />
 			<br />
-
-			{/* <h1>Vite + React</h1>
-			<div className='card'>
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className='read-the-docs'>
-				Click on the Vite and React logos to learn more
-			</p> */}
-		</>
+		</div>
 	);
 }
 

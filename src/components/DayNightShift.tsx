@@ -7,7 +7,7 @@ export function DayNightChange() {
 
 	return (
 		<>
-			<div className=' border-2 mx-28'>
+			<div className=' border-2 mx-28 w-full'>
 				<div
 					className={`${
 						isDay ? "bg-rose-100" : "bg-slate-800"
